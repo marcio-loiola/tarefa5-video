@@ -9,5 +9,4 @@ jobs:
     - name: Copiar os arquivos
       uses: actions/checkout@v4
     - name: Construir Imagem Docker
-      working-directory: ./tarefa5-video 
       run: docker build . --file Dockerfile --tag dashboard-nginx:latest
